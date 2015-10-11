@@ -1,11 +1,12 @@
-## Land use analytics for Karen Chapple
+# Land use analytics for Karen Chapple
 
 This repository includes scripts to compute summary statistics about land use and use change in California. It's based on the "current assessor" and "assessor history" database tables obtained from Dataquick in Summer 2014.
 
 
-#### Project structure
+### Project structure
 
-* All the files are bash shell scripts, which you can run from a Unix-type command prompt using `$ sh scriptname.sh`  
+* All the files are bash shell scripts, which you can run from a Unix-type command prompt using  
+  `$ sh scriptname.sh`  
 * Each script runs a Postgres query that carries out the analytics, saving the output to a local csv
 * There are comments at the top of each script explaining what it does
 * You'll need to have the `psql` command-line tool installed, and a Postgres server running somewhere with the Dataquick tables
@@ -14,12 +15,12 @@ This repository includes scripts to compute summary statistics about land use an
   https://github.com/ual/dataquick/tree/master/maurer_code/load
 
 
-#### Contacts
+### Contacts
 
 * Contact Sam Maurer at `maurer@berkeley.edu` with any questions
 
 
-#### Notes
+### Notes
 
 Our understanding of how Dataquick assigns property id's and use codes is a little conjectural, and might require future work.
 
@@ -32,7 +33,7 @@ The database does include parcel id's, and sometimes parcel genealogy like a for
 In most years, only a very small number of use codes are missing (<0.5%), so it does not seem common that, for example, a property id would be created without a use code, and then subsequently developed and assigned a use code.
 
 
-#### Use code vs zoning
+### Use code vs zoning
 
 Dataquick distinguishes actual from allowed uses:
 
