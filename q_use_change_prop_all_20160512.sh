@@ -38,7 +38,7 @@ SELECT
 	h2.mm_fips_muni_code,
 	h2.mm_fips_county_name,
 	a.ucb_geo_id,
-	concat_ws('_', h1.use_code_std, h2.use_code_std from 1 for 1)
+	concat_ws('_', h1.use_code_std, h2.use_code_std)
 		AS use_code_change,
 	round(h2.sa_lotsize/43560) AS sa_lotsize_acres
 	
